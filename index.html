@@ -10,7 +10,13 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" /> 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <style>
+
+{
+  box-sizing: border-box;
+}
+
   body {
   margin: 0;
   font-family: Luminari, fantasy;
@@ -85,40 +91,6 @@ body {
     padding: 30px;
 }
 
-/*floating area*/
-.hero {
-  /*sizing*/
-  width: 95vw;
-  height: 80vh;
-  
-  /*flexbox stuff */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-  /* text styles */
-  text-align: center;
-  color: white;
-  text-decoration: none;
-  
-    /*Background Styles*/
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('');
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-
-.hero h1 {
-  text-align: center;
-  /* text styles */
-  font-size: 5em;
-  
-  /*Margins*/
-  margin-top: 0;
-  margin-bottom: 0.5em;
-}
 
 /* Create two unequal columns that floats next to each other */
 /* Left column */
@@ -136,7 +108,7 @@ body {
 }
 /* Add a card effect for articles */
 .card {
-  background-color: white;
+  background-color: grey;
   padding: 20px;
   margin-top: 20px;
 }
@@ -246,10 +218,12 @@ s5{
   overflow: auto;
   padding-bottom: 50px;
 }
-#footer {
-  position: relative;
-  height: 20px;
-  margin-top: -50px;
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: black;
+  margin-top: 20px;
 }
 
 @media only screen and (max-width:620px) {
