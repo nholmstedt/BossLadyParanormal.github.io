@@ -16,11 +16,45 @@
 {
   box-sizing: border-box;
 }
-
   body {
   margin: 0;
   font-family: Luminari, fantasy;
 }
+main {
+    color: black;
+}
+
+header {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    display: inline-block;
+    align-items: center;
+    box-shadow: 0 0 25px 0 grey;
+}
+
+header * {
+    display: inline;
+}
+header ul{
+  background-color: black;
+}
+
+header li {
+    margin: 20px;
+    float:left;
+
+}
+
+header li a {
+    color: pink;
+    text-decoration: none;
+    padding: 8px;
+}
+
 /*Social Media Buttons*/
 .fa {
   padding: 20px;
@@ -75,19 +109,20 @@
 
 /*header*/
 header img {
-    height: 30px;
-    margin-left: 50px;
+    height: 50px;
+    margin-left: 40px;
     float: left;
 }
 body {
-    background-image: url('https://BossLadyParanormal.org/BossLadyParanormalHomeBackground.png');
+    height: 125vh;
+    background-image: url('https://BossLadyParanormal.org/MalvernManorBackground.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     font-family: san-serif;
     margin-top: 50px;
-    padding: 10px;
+    padding: 30px;
 }
 
 
@@ -161,21 +196,43 @@ h2{
   color: #EF0295;
 }
 
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: black;
-  margin-top: -20px;
+#container {
+  min-height: 125vh
 }
-
 #main {
   overflow: auto;
   padding-bottom: 50px;
 }
-#container {
-  min-height: 125vh
+#footer {
+  position: relative;
+  height: 50px;
+  margin-top: -50px;
 }
 
+@media only screen and (max-width:620px) {
+  /*for mobile phones*/
+  .menu, .main, .right {
+    width:100%;
+  }
+}
+
+.menu {
+  float:left;
+  width:20%;
+  text-align:center;
+}
+.main {
+  float:left;
+  width:60%;
+  padding: 0 20px;
+}
+.right {
+  float:left;
+  width:20%;
+  padding:15px;
+  margin-top:7px;
+  text-align:center
+}
 
 </style>
   </head>
@@ -241,9 +298,9 @@ h2{
   </div>
 </div>
 
-<div class="footer">
+<footer>
   <center><img src="BossLadyParanormalLogo.png" alt="logo" ></center>
-  </div>
+  </footer>
 
 
 </body>
