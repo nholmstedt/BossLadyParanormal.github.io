@@ -16,10 +16,7 @@
 {
   box-sizing: border-box;
 }
-  body {
-  margin: 0;
-  font-family: Luminari, fantasy;
-}
+
 main {
     color: black;
 }
@@ -53,6 +50,24 @@ header li a {
     color: #EF0295;
     text-decoration: none;
     padding: 8px;
+}
+
+/*header image*/
+header img {
+    height: 50px;
+    margin-left: 40px;
+    float: left;
+}
+body {
+    height: 100%;
+    background-image: url('https://BossLadyParanormal.org/BossLadyParanormalHomeBackground.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    font-family: Luminari, fantasy;
+    margin-top: 0px;
+    padding: 20px;
 }
 
 /*Social Media Buttons*/
@@ -107,30 +122,13 @@ header li a {
 }
 
 
-/*header*/
-header img {
-    height: 50px;
-    margin-left: 40px;
-    float: left;
-}
-body {
-    height: 100%;
-    background-image: url('https://BossLadyParanormal.org/BossLadyParanormalHomeBackground.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    font-family: san-serif;
-    margin-top: 0px;
-    padding: 20px;
-}
 
+/*COLUMNS ON RIGHT AND LEFT*/
 
 /* Create two unequal columns that floats next to each other */
 .column {
   float: left;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+  padding: 30px;
 }
 
 .left {
@@ -195,6 +193,9 @@ h2{
   color: #EF0295;
 }
 
+/*border styles*/
+p.solid {border-style: solid;}
+div.solid {border-style: solid;}
 
 #footer {
   padding: 20px;
@@ -209,6 +210,12 @@ h2{
   height: 50px;
 }
 
+#footer img {
+    height: auto;
+    margin-left: 40px;
+    float: center;
+}
+
 #container {
   min-height: auto
 }
@@ -217,18 +224,6 @@ h2{
   padding-bottom: 50px;
 }
 
-#footer img {
-    height: auto;
-    margin-left: 40px;
-    float: center;
-}
-
-@media only screen and (max-width:620px) {
-  /*for mobile phones*/
-  .menu, .main, .right {
-    width:100%;
-  }
-}
 
 .menu {
   float:left;
@@ -247,9 +242,28 @@ h2{
   margin-top:7px;
   text-align:center
 }
-/*border styles*/
-p.solid {border-style: solid;}
-div.solid {border-style: solid;}
+
+/*LINKS*/
+a:link {
+  color: #EF0295;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: #EF0295;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: #EF0295;
+  background-color: #777879;
+  text-decoration: underline;
+}
+a:active {
+  color: #EF0295;
+  background-color: transparent;
+  text-decoration: underline;
+}
 
 </style>
   </head>
@@ -323,12 +337,13 @@ div.solid {border-style: solid;}
 </div>
 </div>
 
+
+
+</body>
+
 <footer id="footer">
 <img src="BossLadyParanormalLogo.png" alt="logo">
 <s10> Thanks Homie</s10>
   </footer>
-
-
-</body>
 
 </html>
