@@ -127,16 +127,20 @@ body {
 
 
 /* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {   
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
   float: left;
   width: 75%;
   background-color: black;
 }
 
-/* Right column */
-.rightcolumn {
-  float: right;
+.right {
+  float: left;
   width: 25%;
   background-color: black;
   padding-left: 20px;
@@ -257,7 +261,7 @@ h2{
         <body>
 
 <div class="row">
-  <div class= "leftcolumn">
+  <div class= "column left">
   <div class="card">
         <h2> Who are we? </h2>
         <div><img src="SquirrelCage1.jpg" style="height:200px;"> </div>
@@ -270,7 +274,7 @@ h2{
   </div>
 </div>
 
-  <div class= "rightcolumn">
+  <div class= "column right">
     <div class="card">
       <h2>Popular Post</h2>
       <div><img src="NewMemberJenna.jpg" style="height:200px;">
