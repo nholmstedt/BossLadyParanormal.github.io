@@ -40,64 +40,6 @@ body {
     padding: 30px;
 }
 
-/*floating area*/
-.hero {
-  /*sizing*/
-  width: 95vw;
-  height: 80vh;
-  
-  /*flexbox stuff */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-  /* text styles */
-  text-align: center;
-  color: white;
-  text-decoration: none;
-  
-    /*Background Styles*/
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('');
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-
-.hero h1 {
-  text-align: center;
-  /* text styles */
-  font-size: 5em;
-  
-  /*Margins*/
-  margin-top: 0;
-  margin-bottom: 0.5em;
-}
-
-
-
-.hero h2 {
-  text-align: center;
-  /* text styles */
-  font-size: 5em;
-  
-  /*Margins*/
-  margin-top: 0;
-  margin-bottom: 0.5em;
-}
-
-  nav{
-    height: auto;
-    padding: 1em;
-  }
-    #nav1{
-      background-color: black;
-    }
-    #nav2{
-      background-color: black;
-    }
-
 
 main {
     color: black;
@@ -186,6 +128,40 @@ s5{
   }
 }
 
+
+/*COLUMNS ON RIGHT AND LEFT*/
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 30px;
+}
+
+.left {
+  float: left;
+  width: 75%;
+  background-color: ;
+}
+
+.right {
+  float: left;
+  width: 25%;
+  background-color: ;
+  padding-left: 20px;
+}
+/* Add a card effect for articles */
+.card {
+  background-color: grey;
+  padding: 20px;
+  margin-top: 20px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .menu {
   float:left;
   width:20%;
@@ -224,20 +200,41 @@ s5{
             </nav>
 
         </header>
-<div id="container">
-  <section class= "hero">
-  <div id="main">
-        <s5><center><b>Get To Know Us</b></center></s5>
-  </div>
-  </section>
-</div>
-<div>
-  <section class= "hero">
-  <div id="main">
-        <s5><center><b>Hello I am</b></center></s5>
 
+<div class="row">
+  <div class= "column left">
+  <div class="card">
+        <s5> This is us </s5>
+        <div><img src="SquirrelCage1.jpg" style="height:200px;"> </div>
+          <p> Hello all! Boss Lady Paranormal is here to prove that there is other things out there that are unseen and etc etc.</p>
+          <p> We do this during all our free time .. stuff.... </p>
   </div>
-  </section>
+  <div class="card">
+      <s5>Upcoming Events</s5>
+      <p> calendar </p>
+  </div>
+</div>
+
+  <div class= "column right">
+    <div class="card">
+      <div div class="solid">
+      <s5>Popular Posts</s5>
+      <div class="solid"><img src="NewMemberJenna.jpg" style="height:200px;">
+      <p>All of us at Boss Lady Paranormal would like to officially introduce our 4th member Jenna!!! With this new addition Jenna brings years of experience in the paranormal field as well as a vast knowledge of paranormal equipment and techniques. So with that being said we are super excited to welcome Jenna as a Official Boss Lady!!!!!</p>
+    </div><br>
+
+
+      <div class="solid"> <img src="JosieJailSquirrelCage.jpg" style="height:200px;"> 
+        <p>Squirrel Cage Visit: Josie is seen here peering through the bars at Squirrel Cage Jail</p>
+      </div><br>
+
+
+      <div class="solid"> <img src="PotterField.jpg"  style="height:200px; width: 200px"> 
+      <p>We visit Potter's Field on Sept. 1, 2019</p>
+    </div>
+  </div>
+
+
 
  </div>
 <footer id="footer">
