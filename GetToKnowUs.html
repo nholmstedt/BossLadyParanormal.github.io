@@ -108,17 +108,38 @@ s5{
   color: #EF0295;
 }
 
+
+footer {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    display: inline-block;
+    align-items: center;
+    box-shadow: 0 0 25px 0 grey;
+}
+
+footer * {
+    display: inline;
+}
+footer ul{
+  background-color: black;
+}
+
+footer li {
+    margin: 20px;
+    float:left;
+
+}
+
 #container {
   min-height: 125vh
 }
 #main {
   overflow: auto;
   padding-bottom: 50px;
-}
-#footer {
-  position: relative;
-  height: 50px;
-  margin-top: -50px;
 }
 
 @media only screen and (max-width:620px) {
