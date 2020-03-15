@@ -6,8 +6,15 @@
 
   
     <title>Zen Creations</title>
+    <head>
     <link rel="icon" type="image/png" sizes="64x64" href="https://BossLadyParanormal.org/BossLadyParanormalLogo.png">
-<head>
+    <script src="shoppingcart.js" type="text/javascript"></script>
+    <script>
+      var scart = new shoppingcart();
+      scart.PayPal.business = "BossLadyParanormal@paypal.com";
+      scart.inventory.Add("InkGarden","Ink Gardner ABC", "50.00", "ABC INK");
+    </script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1" /> 
   <style>
   body {
@@ -238,7 +245,8 @@ s5{
         <s5><center><b>Zen Creations</b></center></s5>
   </div>
 </div>
-
+<div id="InkGarden.item"></div>
+<div id="Pad.item"></div>
 
  </div>
 <footer id="footer">
