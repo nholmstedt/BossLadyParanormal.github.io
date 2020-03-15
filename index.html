@@ -176,6 +176,67 @@ body {
   text-align:center
 }
 
+/*see through background section*/
+
+/*floating area*/
+.hero {
+  /*sizing*/
+  width: 95vw;
+  height: 80vh;
+  
+  /*flexbox stuff */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  /* text styles */
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  
+    /*Background Styles*/
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+.hero h1 {
+  text-align: center;
+  /* text styles */
+  font-size: 5em;
+  
+  /*Margins*/
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+
+
+.hero h2 {
+  text-align: center;
+  /* text styles */
+  font-size: 5em;
+  
+  /*Margins*/
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+#container {
+  min-height: 125vh
+}
+#main {
+  overflow: auto;
+  padding-bottom: 50px;
+}
+#footer {
+  position: relative;
+  height: 50px;
+  margin-top: -50px;
+}
+
 /*Navigation colors and height/padding*/
   nav{
     height: auto;
@@ -269,10 +330,14 @@ a:active {
         <s5><center> Boss Lady Paranormal </center></s5>
   </div>
 
-  <div class="card">
+  <div id="container">
+  <section class= "hero">
+  <div id="main">
       <s5><center>Upcoming Events</s5></center><br>
       <center><iframe src="https://calendar.google.com/calendar/b/1/embed?height=600&amp;wkst=1&amp;bgcolor=%23968f8f&amp;ctz=America%2FChicago&amp;src=bHZ2bXZhbTN0bTY1cWlqNWJobm1hcmt2NzBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%237CB342&amp;title=Boss%20Lady%20Paranormal" style="border:solid 1px #777" width="3000" height="600" frameborder="0" scrolling="no"></iframe></center>
-  </div>
+    </div>
+  </section>
+</div>
 </div>
 
   <div class= "column right">
